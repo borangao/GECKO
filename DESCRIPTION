@@ -1,0 +1,12 @@
+Package: GECKO
+Type: Package
+Title: Genetic and Environmental Covariance Estimation by Composite-Likelihood Optimization 
+Version: 1.0
+Date: 2020-05-01
+Author: Boran Gao
+Maintainer: Boran Gao <borang@umich.edu>
+Description: More about what it does (maybe more than one line)
+License: GPL-3
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 6.1.1

@@ -1,0 +1,4 @@
+useDynLib(GECKO, .registration=TRUE)
+importFrom(Rcpp, evalCpp)
+importFrom("stats", "pnorm", "var")
+exportPattern("^[[:alpha:]]+")
