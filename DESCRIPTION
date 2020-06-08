@@ -10,3 +10,7 @@ License: GPL-3
 Imports: Rcpp (>= 1.0.0)
 LinkingTo: Rcpp, RcppArmadillo
 RoxygenNote: 6.1.1
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
