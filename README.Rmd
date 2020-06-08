@@ -32,8 +32,9 @@ The following help page will provide quick references for GECKO package and the 
 library(GECKO)
 package?GECKO
 ###Read in the summary statistics
-Z1<-fread(summary_name_1)
-Z2<-fread(summary_name_2)
+Z1<-fread(summary_stat_study_1)
+Z2<-fread(summary_stat_stduy_2)
+####summary_stat_study_1 and summary_stat_study_1 are the file names of the summary statistics with column name chr, bp, SNP, A1, A2, N, Z, P representing chromosome, base pair position, SNP iD, major allele, minor allele, number of individuals in the study, Z score, P value
 ###Need to specify the number of individuals within each study: n1,n2, and number of the overlapping individuals in the two studies:ns
 ###if the two samples are from the separate studies, nsin = 0, and Fix_Vein = 1
 ###if the two samples are from the same study, nsin need to be specified
@@ -50,7 +51,7 @@ Test = T
 ### LDscore is the LDscore output from the LD score software. We suggest to use 1000 genome reference panel for the LD score calculation
 ### Weightin = T is always set for GECKO to improve the efficiency
 ### Test = T is you want to test if the two trait are significantly correlated, otherwise you could specify it to be false
-Result<-GECKO(Z1,Z2,n1in,n2in,nsin,LDscore,Weightin,Fix_Vein,Test)
+Result<-GECKO_R(Z1,Z2,n1in,n2in,nsin,LDscore,Weightin,Fix_Vein,Test)
 
 ```
 
