@@ -52,7 +52,7 @@ Test = T
 ### LDscore is the LDscore output from the LD score software. We suggest to use 1000 genome reference panel for the LD score calculation
 ### Weightin = T is always set for GECKO to improve the efficiency
 ### Test = T is you want to test if the two trait are significantly correlated, otherwise you could specify it to be false
-Result<-GECKO_R(sumstat_1,sumstat_2,n1in,n2in,n1in,ldscore,Weightin,Fix_Vein,Test)
+Result<-GECKO_R(sumstat_1,sumstat_2,n1in,n2in,0,ldscore,Weightin,T,Test)
 
 ```
 
