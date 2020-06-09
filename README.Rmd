@@ -45,7 +45,7 @@ n2in<-round(mean(sumstat_2$N))
 #nsin number of overlapped samples
 
 Weightin = T
-Fix_Vein = F #(if two studies have non-overlapped samples, otherwise false)
+Fix_Vein = T #(if two studies have non-overlapped samples, otherwise false)
 Test = T
 ###Use GECKO function for the GECKO program, Z1, Z2 are the summary statistic files 
 ###n1, n2, ns are the number of individuals from the two studies, and the number of overlapped individuals
