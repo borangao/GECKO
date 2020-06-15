@@ -54,5 +54,9 @@ Test = T #Test for significance or not
 ###if the two samples are from the same study, nsin need to be specified
 
 Result<-GECKO_R(sumstat_1,sumstat_2,n1in,n2in,nsin,ldscore,Weightin,Fix_Vein,Test)
+Result
 ```
+
+The result consists 8 columns including the environmental variance estiamte of study 1, environmental covariance estimate, environmental variance estiamte of study 2, environmental correlation estimate, genetic variance estimate(heritability) of study 1, genentic covariance estimate, genetic variance estimate of study 2, and genetic correlation estimate. The environmnetal covariance and correlation are zero in non-overlapping individuals.
+
 
